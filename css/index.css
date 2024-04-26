@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Tangerine:wght@700&display=swap');
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem; 
+    background: url(/image/background.jpg);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 1)
+    ),url(/image/background.jpg);
+    color: #ffffff;
+}
+.intro-content h1{
+    font-family: "Chonburi", serif;
+    font-size: 40px;
+}
+.intro-content p{
+    font-size: 25px;
+}
+
+.intro-content, .intro-image {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .intro-image {
+        display: none; 
+    }
+
+    .intro-content {
+        flex: 1;
+        text-align: center; 
+    }
+    .intro-content h1{
+        flex: 1;
+        font-size: 30px;
+        text-align: center; 
+    }
+    .intro-content p{
+        flex: 1;
+        font-size: 15px;
+        text-align: center; 
+    }
+}
+
+/* div sa gitna */
+
+.shipping-announcement {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 1.25em; 
+    margin: 20px;
+}
+
+/*media query para sa smaller screens */
+@media (max-width: 768px) {
+    .shipping-announcement p {
+        font-size: 1em;
+    }
+}
